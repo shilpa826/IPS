@@ -112,7 +112,6 @@ const ClassList = () => {
     <BackgroundImage>
       <LoginNavbar />
       <BlueHeaderBar />
-
       <div className="min-h-screen bg-gray-100 p-8">
         <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           {/* ✅ Added the button with the plus symbol and conditional rendering */}
@@ -193,5 +192,4 @@ const ClassList = () => {
     </BackgroundImage>
   );
 };
-
 export default ClassList;

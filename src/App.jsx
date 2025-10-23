@@ -16,6 +16,7 @@ import SessionList from "./pages/SessionList";
 import ClassList from "./pages/ClassList";
 import CreateClass from "./pages/CreateClass";
 import SectionList from "./pages/SectionList";
+import CreateSection from "./pages/CreateSection";
  
 function App() {
 
@@ -43,11 +44,8 @@ function App() {
          <Route path="/class-list" element={ <ProtectedRoute> <ClassList/> </ProtectedRoute> } />
         <Route path="/create-class" element={ <ProtectedRoute> <CreateClass/></ProtectedRoute>  } /> 
         <Route path="/section-list" element={<ProtectedRoute><SectionList></SectionList></ProtectedRoute>} /> 
+        <Route path="/create-section" element={<ProtectedRoute><CreateSection></CreateSection></ProtectedRoute>} /> 
         
-
-
-
-
     </Routes>
     </BrowserRouter>
   </>
