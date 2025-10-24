@@ -20,7 +20,7 @@ const Dashboard = () => {
       
       {/* 1. Navbar (Fixed at the Top) */}
       {/* NOTE: Class attribute should use curly braces in JSX: className="w-full..." */}
-      <div className="w-full sticky top-0 z-30 shadow-md">
+      <div className="w-full fixed top-0 z-30 shadow-md">
         <DashboardNavbar 
           onMenuClick={toggleSidebar}
         />
@@ -43,7 +43,7 @@ const Dashboard = () => {
 
         {/* Content Area (SCROLLABLE) */}
         <div 
-          className={`flex-1 overflow-y-auto transition-all duration-300 ease-in-out 
+          className={`flex-1 overflow-y-auto transition-all duration-300 ease-in-out mt-15
             ${isSidebarCollapsed ? 'lg:ml-[72px]' : 'lg:ml-64'}
           `}
         >
